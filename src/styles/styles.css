@@ -1,0 +1,87 @@
+.page-container {
+    height: 100vh;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.post-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.post-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.post-image {
+    width: 50px;
+    height: 50px;
+}
+.page-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.page-table {
+    border-collapse:separate;
+    border-spacing:10px;
+}
+
+.item-container {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.page-table-body {
+    text-align: center;
+}
+
+.add-icon {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+    transition: opacity 1s;
+}
+
+.add-icon:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .add-icon {
+        animation: add-icon-spin infinite 10s linear;
+    }
+}
+
+@keyframes add-icon-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
